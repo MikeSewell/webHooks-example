@@ -11,7 +11,13 @@ app.get('/', (req,res)=>{
 
 app.post('/webhook', (req,res)=>{
     res.status(200).send("hello world")
-    console.log(req.body);
+    const { body } = req
+    const senderName = body.sender.login
+    const repoUsed = body.repository.name
+    const linktoRepo = body.repository.html_url
+
+    const logString = `${senderName} is working in the ${repoUsed} repository. \nLink to that working repository : ${linktoRepo}`
+    console.log(logString);
 });
 
 
