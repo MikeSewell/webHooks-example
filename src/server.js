@@ -7,13 +7,13 @@ app.get('/', (req,res)=>{
 console.log('body ==== : ', req.body)
 res.send('Hello World')
 });
-app.post('/', (req,res)=>{
+app.post('/hook', (req,res)=>{
 console.log('body ==== : ', req.body)
 res.send('Hello World')
 });
 
 
-const port = process.env.PORT || 3000;
+var port = normalizePort(process.env.PORT || '3000');
 app.listen(3000,()=>{
     console.log("Running on port : ",port);
 
