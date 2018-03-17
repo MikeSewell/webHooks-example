@@ -16,7 +16,8 @@ app.post('/webhook', (req,res)=>{
     const repoUsed = body.repository.name
     const linktoRepo = body.repository.html_url
 
-    const logString = `${senderName} is working with pull-request in the ${repoUsed} repository. \nLink to that working repository : ${linktoRepo}`
+    
+    const logString = `${senderName} is working with pull-request in theg ${repoUsed} repository. \nLink to that working repository : ${linktoRepo}`
     console.log(logString);
 });
 
