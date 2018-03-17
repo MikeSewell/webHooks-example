@@ -9,7 +9,7 @@ app.get('/', (req,res)=>{
 
 app.post('/hook', (req,res)=>{
 console.log('body ==== : ', req.body)
-    res.writeHead(200, { 'json': 'reply' })
+    res.status(200).send("hello world")
 });
 
 
