@@ -4,11 +4,12 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get('/', (req,res)=>{
-res.send('Hello World')
+    res.writeHead(200, { 'Content-Type': 'text/html' })
 });
+
 app.post('/hook', (req,res)=>{
 console.log('body ==== : ', req.body)
-res.send('Hello World')
+    res.writeHead(200, { 'json': 'reply' })
 });
 
 
