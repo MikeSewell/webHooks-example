@@ -4,7 +4,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get('/', (req,res)=>{
-console.log('body ==== : ', req.body)
+// console.log('body ==== : ', req.body)
 res.send('Hello World')
 });
 app.post('/hook', (req,res)=>{
