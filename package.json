@@ -1,0 +1,21 @@
+{
+  "name": "SimpleHello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "8.8.1",
+    "npm": "5.7.1"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.2",
+    "body-parser": "1.18.2"
+  }
+}
