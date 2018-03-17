@@ -5,7 +5,6 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get('/', (req,res)=>{
-
     res.status(200).send('Web Hooks Example')
 });
 
